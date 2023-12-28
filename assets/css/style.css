@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Raleway";
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: nav;
+  padding: 16px 0px 16px 0px;
+  background-color: #676767;
+}
+
+nav h1 {
+  font-size: xx-large;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: aside;
+  background-color: #676767;
+}
+
+aside h1 {
+  font-size: 32px;
+  padding: 16px;
+}
+
+aside p {
+  font-size: larger;
+  padding: 16px 0px 16px 0px;
+}
+
+main {
+  grid-area: main;
+  background-color: #f5f5f5;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 20fr 1fr;
+  grid-template-areas:
+    "nav nav"
+    "aside main"
+    "footer footer";
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.grid-cards {
+  display: grid;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 32px 48px 32px 32px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-sizing: border-box;
+}
+
+.card-img {
+  width: 60%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.titulo {
+  font-size: 24px;
+  padding-top: 16px;
+  color: black;
+}
+
+.precio {
+  font-size: 24px;
+  padding: 12px 0px 12px 0px;
+  color: black;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 8px 0px 8px 0px;
+  min-width: 100%;
+  color: white;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.button_color {
+  background-color: #ff6d09;
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
